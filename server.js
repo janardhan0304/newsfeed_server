@@ -1,7 +1,6 @@
-import express from 'express';
+import Connect from './database/Conncetion.js';
+import app from './app.js';
 
-const app=express()
-
-const PORT=8080;
-
+Connect()
+const PORT=8000;
 app.listen(PORT,()=> console.log(`Server started in PORT ${PORT}`))
